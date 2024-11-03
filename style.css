@@ -27,8 +27,13 @@
 } */
 
 body {
-  font-family: "Open Sans", serif;
+  font-family: "Mansalva", sans-serif;
   margin: 0;
+}
+
+p,
+h3 {
+  font-family: "Open Sans", serif;
 }
 
 nav {
@@ -37,6 +42,7 @@ nav {
   width: 100vw;
   top: 0;
   background-color: #fff;
+  z-index: 1;
 }
 
 ul {
@@ -49,13 +55,17 @@ ul {
 
 li {
   padding: 15px;
+  display: inline-block;
 }
 
 li a {
   text-decoration: none;
-  font-family: "Mansalva", sans-serif;
   color: black;
   font-size: 24px;
+}
+
+.basket {
+  width: 40px;
 }
 
 header {
@@ -69,7 +79,6 @@ header {
 }
 
 h1 {
-  font-family: "Mansalva", sans-serif;
   font-size: 122px;
   color: rgb(244, 244, 232);
   position: absolute;
@@ -100,8 +109,13 @@ main {
 .products__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-basis: 49%;
   padding: 10px;
+}
+
+.products__text img {
+  max-width: 250px;
 }
 
 .products__deco {
@@ -120,4 +134,41 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.products__price {
+  align-self: self-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.products__price p {
+  font-family: "Mansalva", sans-serif;
+  margin: 0;
+  font-size: 32px;
+}
+
+button {
+  font-family: "Mansalva", sans-serif;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+}
+
+.icon {
+  width: 40px;
+  margin: 10px;
+}
+
+footer {
+  font-family: "Mansalva", sans-serif;
+  padding-top: 40px;
+  background: url(pictures/header.jpg);
+  height: 150px;
+  text-align: center;
 }
