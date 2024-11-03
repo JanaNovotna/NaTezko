@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* .mansalva-regular {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+body {
+  font-family: "Open Sans", serif;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  display: inline-block;
+  width: 100vw;
+  top: 0;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+li {
+  padding: 15px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+header {
+  background: url(pictures/header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 84px;
+  height: 300px;
+}
+
+h1 {
+  font-family: "Mansalva", sans-serif;
+  font-size: 72px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin: 15px;
+}
